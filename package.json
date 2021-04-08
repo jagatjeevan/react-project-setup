@@ -15,12 +15,17 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:no-watch": "react-scripts test  ./src/ --watchAll=false",
+    "coverage": "yarn run test --watchAll=false --coverage",
     "eject": "react-scripts eject",
     "prettier": "prettier --check .",
-    "prettier:fix": "prettier --write ."
+    "prettier:fix": "prettier --write .",
+    "lint": "eslint ./src/"
   },
   "pre-commit": [
-    "prettier"
+    "test:no-watch",
+    "prettier",
+    "coverage"
   ],
   "eslintConfig": {
     "extends": [
@@ -43,5 +48,15 @@
   "devDependencies": {
     "pre-commit": "^1.2.2",
     "prettier": "2.2.1"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 0,
+        "functions": 33,
+        "lines": 9,
+        "statements": 9
+      }
+    }
   }
 }

@@ -2,10 +2,11 @@
 
 This project is created from [Create React App](https://github.com/facebook/create-react-app)
 
-## Dotfiles present
+## Good things present here
 
 - .nvmrc : Fixing the node version so that there is no dependency problems from node version.
 - .prettiertc : [Prettier](https://prettier.io/) Enforcing a single way to write code
+- [pre-commit hook](https://www.npmjs.com/package/pre-commit) : Add other tasks required to check before commiting a file
 
 ## Available Scripts
 
