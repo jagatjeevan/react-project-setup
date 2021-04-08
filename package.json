@@ -19,6 +19,9 @@
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write ."
   },
+  "pre-commit": [
+    "prettier"
+  ],
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -38,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "pre-commit": "^1.2.2",
     "prettier": "2.2.1"
   }
 }
