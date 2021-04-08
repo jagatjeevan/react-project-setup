@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# React Project Setup
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is created from [Create React App](https://github.com/facebook/create-react-app)
+
+## Dotfiles present
+
+- .nvmrc : Fixing the node version so that there is no dependency problems from node version.
+- .prettiertc : [Prettier](https://prettier.io/) Enforcing a single way to write code
 
 ## Available Scripts
 
